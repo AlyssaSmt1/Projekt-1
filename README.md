@@ -21,4 +21,3 @@ Lichtverhältnisse (Schatten, Halbschatten, Licht).
 Gießen (Wie oft pro Woche/Monat/Tag).
 Letztes Gießdatum (Datum).
 
-.
