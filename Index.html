@@ -1,28 +1,73 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MyPlants</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="myScript.js" defer></script>
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MyPlants</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="myScript.js" defer></script>
+</head>
 
-    <body>
+<body>
 
-    <header>
-       <h3> MyPlants </h3>
-    </header>
-    <main>
-      <div>
-        <h3></h3>
+  <header>
+    <h3>🌿 MyPlants - Mein Pflanzenmanager</h3>
+  </header>
+
+  <main class="wrapper">
+    <!-- Linke Seite: Eingabe -->
+    <section class="eingabe-bereich">
+      <h2>Neue Pflanze hinzufügen</h2>
+      <form id="pflanzen-form">
+        <div class="form-row">
+          <label for="spitzname">Spitzname:</label>
+          <input type="text" id="spitzname" name="spitzname" />
+        </div>
+  
+        <div class="form-row">
+          <label for="pflanzenart">Pflanzenart:</label>
+          <input type="text" id="pflanzenart" name="pflanzenart" />
+        </div>
+  
+        <div class="form-row">
+          <label for="licht">Licht:</label>
+          <select id="licht" name="licht">
+            <option value="">Bitte wählen</option>
+            <option>Licht</option>
+            <option>Halbschatten</option>
+            <option>Schatten</option>
+          </select>
+        </div>
+  
+        <div class="form-row">
+          <label for="wasser">Wässerung:</label>
+          <input type="number" id="wasser-menge" name="wasser-menge" min="1" />
+          <select id="waesserungs-einheit" name="waesserungs-einheit">
+            <option>Tag</option>
+            <option>Woche</option>
+            <option>Monat</option>
+          </select>
+          <input type="date" id="start-datum" />
+        </div>
+  
+        <div class="form-row">
+          <label for="beschreibung">Beschreibung:</label>
+          <textarea id="beschreibung" name="beschreibung" rows="3"></textarea>
+        </div>
+  
+        <button type="submit">Speichern</button>
+      </form>
+    </section>
+  
+    <!-- Rechte Seite: Pflanzenliste -->
+    <section class="pflanzen-liste">
+      <h2>Meine Pflanzen</h2>
+      <ul id="pflanzen-anzeige">
+        <!-- Hier werden später Einträge angezeigt -->
+      </ul>
+    </section>
+  </main>
 
 
-      </div>
-    </main>
-    <footer>Fußbereich</footer>
-
-  </body>
-
-
+</body>
 </html>

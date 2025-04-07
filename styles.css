@@ -1,32 +1,43 @@
+/* ===== Grunddesign ===== */
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    background-color: #9cff94;
-}
-
-.container {
-    max-width: 600px;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-input, select, button {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.plant-list {
-    margin-top: 20px;
-}
-
-.plant {
-    background: #e3f2fd;
-    padding: 10px;
-    margin: 5px 0;
-    border-radius: 5px;
-}
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f7fcf5;
+    color: #2e4d27;
+  }
+  
+  /* ===== Header-Banner ===== */
+  header {
+    background: linear-gradient(90deg, #b4e197, #d1f1c2);
+    padding: 40px 20px;
+    text-align: center;
+    color: #2f4d2f;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-bottom: 5px solid #a5ce91;
+  }
+  
+  header h3 {
+    font-size: 2.4rem;
+    margin: 0;
+    letter-spacing: 1px;
+  }
+  
+  /* ===== Hauptbereich ===== */
+  .wrapper {
+    display: flex;
+    gap: 40px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+  
+  /* ===== Eingabeformular ===== */
+  .eingabe-bereich {
+    flex: 1;
+    min-width: 350px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba
+  
