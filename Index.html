@@ -1,43 +1,21 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyPlants - Pflanzengieß-Tracker</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <h2>MyPlants - Pflanzengieß-Tracker</h2>
-        <input type="text" id="plantName" placeholder="Pflanzenname">
-        <input type="text" id="plantType" placeholder="Pflanzenart">
-        <select id="lightCondition">
-            <option value="Licht">Licht</option>
-            <option value="Halbschatten">Halbschatten</option>
-            <option value="Schatten">Schatten</option>
-        </select>
-        <input type="number" id="waterFrequency" placeholder="Gießen alle X Tage">
-        <button onclick="addPlant()">Pflanze hinzufügen</button>
-        
-        <div class="plant-list" id="plantList"></div>
-    </div>
-    
-    <script>
-        function addPlant() {
-            let name = document.getElementById('plantName').value;
-            let type = document.getElementById('plantType').value;
-            let light = document.getElementById('lightCondition').value;
-            let water = document.getElementById('waterFrequency').value;
-            
-            if (name && type && water) {
-                let plantDiv = document.createElement('div');
-                plantDiv.classList.add('plant');
-                plantDiv.innerHTML = `<strong>${name}</strong> (${type})<br>
-                                      Licht: ${light} | Gießen alle ${water} Tage`;
-                document.getElementById('plantList').appendChild(plantDiv);
-            }
-        }
-    </script>
-</body>
-</html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyPlants</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="myScript.js" defer></script>
+  </head>
 
+
+  <body>
+    <header>Kopfbereich</header>
+    <main>
+      <p>Seiteninhalte</p>
+    </main>
+    <footer>Fußbereich</footer>
+  </body>
+
+  
+</html>
