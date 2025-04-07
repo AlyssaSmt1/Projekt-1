@@ -11,13 +11,32 @@
 <body>
 
   <header>
-    <h3>🌿 MyPlants - Mein Pflanzenmanager</h3>
+    <h3>🌿 MyPlants - Dein Pflanzenmanager</h3>
   </header>
 
   <main class="wrapper">
     <!-- Linke Seite: Eingabe -->
     <section class="eingabe-bereich">
       <h2>Neue Pflanze hinzufügen</h2>
+
+      <div class="emoji-auswahl">
+        <label for="pflanzen-emoji">Emoji:</label>
+        <select id="pflanzen-emoji" name="pflanzen-emoji">
+          <option value="🌿">🌿</option>
+          <option value="💐">💐</option>
+          <option value="🌵">🌵</option>
+          <option value="🌻">🌻</option>
+          <option value="🌸">🌸</option>
+          <option value="🌹">🌹</option>
+          <option value="🌼">🌼</option>
+          <option value="🏵️">🏵️</option>
+          <option value="🌺">🌺</option>
+          <option value="🌱">🌱</option>
+          <option value="🧄">🧄</option>
+          <option value="🥦">🥦</option>
+        </select>
+      </div>
+      
       <form id="pflanzen-form">
         <div class="form-row">
           <label for="spitzname">Spitzname:</label>
@@ -30,7 +49,7 @@
         </div>
   
         <div class="form-row">
-          <label for="licht">Licht:</label>
+          <label for="licht">Lichtverhältnisse:</label>
           <select id="licht" name="licht">
             <option value="">Bitte wählen</option>
             <option>Licht</option>
@@ -64,6 +83,18 @@
       <h2>Meine Pflanzen</h2>
       <ul id="pflanzen-anzeige">
         <!-- Hier werden später Einträge angezeigt -->
+         <!--Beispiel Pflanze von ChatGPT-->
+        <div class="pflanzenkarte">
+          <div class="pflanzenkopf">
+            🌺 Lilly (Orchidee)
+          </div>
+          <div class="pflanzendetails">
+            💧 Wässerung: alle 7 Tage<br />
+            ☀️ Licht: Halbschatten<br />
+            📅 Ab: 01.04.2025
+          </div>
+        </div>
+        
       </ul>
     </section>
   </main>

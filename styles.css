@@ -27,7 +27,7 @@ body {
     display: flex;
     gap: 40px;
     padding: 40px;
-    max-width: 1200px;
+    max-width: 12000px;
     margin: auto;
     flex-wrap: wrap;
   }
@@ -39,5 +39,160 @@ body {
     background: #ffffff;
     padding: 25px;
     border-radius: 16px;
-    box-shadow: 0 0 20px rgba
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  }
+  
+  .eingabe-bereich h2 {
+    margin-top: 0;
+    color: #457d38;
+  }
+
+  
+  /* Reihen */
+  .form-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+  
+  label {
+    width: 120px;
+    font-weight: bold;
+  }
+  
+  input, select, textarea {
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #cfe7c7;
+    background-color: #f9fff6;
+    font-size: 1rem;
+  }
+  
+  /* Button */
+  button {
+    margin-top: 15px;
+    background-color: #7bbf6a;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #65a857;
+  }
+  
+  /* ===== Pflanzenliste / Karten ===== */
+  .pflanzen-liste {
+    flex: 1;
+    min-width: 350px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  }
+  
+  .pflanzen-liste h2 {
+    color: #457d38;
+    margin-top: 0;
+  }
+  
+  /* Karten-Stil */
+  ul#pflanzen-anzeige {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  ul#pflanzen-anzeige li {
+    background-color: #effff1;
+    border: 1px solid #d2ebd3;
+    border-left: 8px solid #93cc89;
+    border-radius: 12px;
+    padding: 15px;
+    transition: transform 0.2s;
+  }
+  
+  ul#pflanzen-anzeige li:hover {
+    transform: scale(1.02);
+  }
+  
+
+
+
+  
+  /* Startseite */
+body.startseite {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #cde8c3, #e9f7e3);
+    font-family: 'Segoe UI', sans-serif;
+    color: #2e4d27;
+    margin: 0;
+  }
+  
+  .begrüßung {
+    text-align: center;
+    background: #ffffffdd;
+    padding: 60px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .begrüßung h1 span {
+    color: #69a85d;
+  }
+  
+  .weiter-button {
+    margin-top: 30px;
+    display: inline-block;
+    padding: 14px 28px;
+    font-size: 1.2rem;
+    background-color: #7bbf6a;
+    color: white;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .weiter-button:hover {
+    background-color: #65a857;
+  }
+  
+
+
+
+
+
+
+  /* Beispiel Pflanze von ChatGPT */
+
+  .pflanzenkarte {
+    background-color: #f4fff2;
+    border: 2px solid #a2cfa2;
+    border-radius: 16px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  }
+  
+  .pflanzenkopf {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .pflanzendetails {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
   
