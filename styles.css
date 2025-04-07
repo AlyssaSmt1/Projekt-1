@@ -124,8 +124,14 @@ body {
     transform: scale(1.02);
   }
   
-
-
+  .emoji-auswahl select {
+    align-items: center;
+    font-size: 1.3rem;
+    background-color: #f1f8f1;
+    border-radius: 8px;
+    padding: 4px 10px;
+  }
+  
 
   
   /* Startseite */
