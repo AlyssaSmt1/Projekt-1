@@ -1,4 +1,4 @@
-/* ===== Grunddesign ===== */
+/*  Grunddesign */
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
@@ -6,13 +6,12 @@ body {
     color: #2e4d27;
   }
   
-  /* ===== Header-Banner ===== */
+  /* Banner Oben */
   header {
     background: linear-gradient(90deg, #b4e197, #d1f1c2);
     padding: 40px 20px;
     text-align: center;
     color: #2f4d2f;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-bottom: 5px solid #a5ce91;
   }
   
@@ -22,8 +21,8 @@ body {
     letter-spacing: 1px;
   }
   
-  /* ===== Hauptbereich ===== */
-  .wrapper {
+  /*  Hauptbereich */
+  .seite {
     display: flex;
     gap: 40px;
     padding: 40px;
@@ -32,7 +31,7 @@ body {
     flex-wrap: wrap;
   }
   
-  /* ===== Eingabeformular ===== */
+  /*  Eingabeformular, links  */
   .eingabe-bereich {
     flex: 1;
     min-width: 350px;
@@ -49,7 +48,7 @@ body {
 
   
   /* Reihen */
-  .form-row {
+  .eingabe-zeile {
     display: flex;
     align-items: center;
     gap: 15px;
@@ -70,7 +69,7 @@ body {
     font-size: 1rem;
   }
   
-  /* Button */
+  /* Knopf */
   button {
     margin-top: 15px;
     background-color: #7bbf6a;
@@ -87,7 +86,7 @@ body {
     background-color: #65a857;
   }
   
-  /* ===== Pflanzenliste / Karten ===== */
+  /*  Pflanzenliste, rechte seite */
   .pflanzen-liste {
     flex: 1;
     min-width: 350px;
@@ -101,84 +100,6 @@ body {
     color: #457d38;
     margin-top: 0;
   }
-  
-  /* Karten-Stil */
-  ul#pflanzen-anzeige {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  ul#pflanzen-anzeige li {
-    background-color: #effff1;
-    border: 1px solid #d2ebd3;
-    border-left: 8px solid #93cc89;
-    border-radius: 12px;
-    padding: 15px;
-    transition: transform 0.2s;
-  }
-  
-  ul#pflanzen-anzeige li:hover {
-    transform: scale(1.02);
-  }
-  
-  .emoji-auswahl select {
-    align-items: center;
-    font-size: 1.3rem;
-    background-color: #f1f8f1;
-    border-radius: 8px;
-    padding: 4px 10px;
-  }
-  
-
-  
-  /* Startseite */
-body.startseite {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background: linear-gradient(to bottom right, #cde8c3, #e9f7e3);
-    font-family: 'Segoe UI', sans-serif;
-    color: #2e4d27;
-    margin: 0;
-  }
-  
-  .begrüßung {
-    text-align: center;
-    background: #ffffffdd;
-    padding: 60px;
-    border-radius: 20px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-  }
-  
-  .begrüßung h1 span {
-    color: #69a85d;
-  }
-  
-  .weiter-button {
-    margin-top: 30px;
-    display: inline-block;
-    padding: 14px 28px;
-    font-size: 1.2rem;
-    background-color: #7bbf6a;
-    color: white;
-    border-radius: 12px;
-    text-decoration: none;
-    transition: 0.3s;
-  }
-  
-  .weiter-button:hover {
-    background-color: #65a857;
-  }
-  
-
-
-
-
-
 
   /* Beispiel Pflanze von ChatGPT */
 
