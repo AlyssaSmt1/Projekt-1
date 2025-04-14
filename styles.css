@@ -123,3 +123,55 @@ body {
     line-height: 1.4;
   }
   
+
+  /* --- Responsive Design für kleinere Geräte --- */
+@media (max-width: 768px) {
+  .seite {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .eingabe-bereich,
+  .pflanzen-liste {
+    min-width: 100%;
+    padding: 20px;
+  }
+
+  .eingabe-zeile {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  label {
+    width: auto;
+    margin-bottom: 5px;
+  }
+
+  input, select, textarea {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+    padding: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h3 {
+    font-size: 1.6rem;
+  }
+
+  .eingabe-bereich h2,
+  .pflanzen-liste h2 {
+    font-size: 1.4rem;
+  }
+
+  .pflanzenkopf {
+    font-size: 1.1rem;
+  }
+
+  .pflanzendetails {
+    font-size: 0.9rem;
+  }
+}
