@@ -1,150 +1,168 @@
-/*  Grunddesign */
+/* Grunddesign */
 body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #f7fcf5;
-    color: #2e4d27;
-  }
-  
-  /* Banner Oben */
-  header {
-    background: linear-gradient(90deg, #b4e197, #d1f1c2);
-    padding: 40px 20px;
-    text-align: center;
-    color: #2f4d2f;
-    border-bottom: 5px solid #a5ce91;
-  }
-  
-  header h3 {
-    font-size: 2.4rem;
-    margin: 0;
-    letter-spacing: 1px;
-  }
-  
-  /*  Hauptbereich */
-  .seite {
-    display: flex;
-    gap: 40px;
-    padding: 40px;
-    max-width: 12000px;
-    margin: auto;
-    flex-wrap: wrap;
-  }
-  
-  /*  Eingabeformular, links  */
-  .eingabe-bereich {
-    flex: 1;
-    min-width: 350px;
-    background: #ffffff;
-    padding: 25px;
-    border-radius: 16px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
-  }
-  
-  .eingabe-bereich h2 {
-    margin-top: 0;
-    color: #457d38;
-  }
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f7fcf5;
+  color: #2e4d27;
+  font-size: 1em; /* Basisgröße */
+}
 
-  
-  /* Reihen */
-  .eingabe-zeile {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 15px;
-  }
-  
-  label {
-    width: 120px;
-    font-weight: bold;
-  }
-  
-  input, select, textarea {
-    flex: 1;
-    padding: 10px;
-    border-radius: 10px;
-    border: 1px solid #cfe7c7;
-    background-color: #f9fff6;
-    font-size: 1rem;
-  }
-  
-  /* Knopf */
-  button {
-    margin-top: 15px;
-    background-color: #7bbf6a;
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    border-radius: 10px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #65a857;
-  }
-  
-  /*  Pflanzenliste, rechte seite */
-  .pflanzen-liste {
-    flex: 1;
-    min-width: 350px;
-    background: #ffffff;
-    padding: 25px;
-    border-radius: 16px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
-  }
-  
-  .pflanzen-liste h2 {
-    color: #457d38;
-    margin-top: 0;
-  }
+/* Banner Oben */
+header {
+  background: linear-gradient(90deg, #b4e197, #d1f1c2);
+  padding: 2.5em 1.25em;
+  text-align: center;
+  color: #2f4d2f;
+  border-bottom: 0.3em solid #a5ce91;
+}
 
-  /* Beispiel Pflanze von ChatGPT */
+header h3 {
+  font-size: 2.4em;
+  margin: 0;
+  letter-spacing: 0.05em;
+}
 
-  .pflanzenkarte {
-    background-color: #f4fff2;
-    border: 2px solid #a2cfa2;
-    border-radius: 16px;
-    padding: 15px;
-    margin: 10px 0;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-  }
-  
-  .pflanzenkopf {
-    font-size: 1.3rem;
-    font-weight: bold;
-    margin-bottom: 8px;
-  }
-  
-  .pflanzendetails {
-    font-size: 0.95rem;
-    line-height: 1.4;
-  }
-  
+/* Hauptbereich */
+.seite {
+  display: flex;
+  gap: 2.5em;
+  padding: 2.5em;
+  max-width: 100%;
+  margin: auto;
+  flex-wrap: wrap;
+}
 
-  /* --- Responsive Design für kleinere Geräte --- */
-@media (max-width: 768px) {
+/* Eingabeformular, links */
+.eingabe-bereich {
+  flex: 1;
+  min-width: 22em;
+  background: #ffffff;
+  padding: 1.6em;
+  border-radius: 1em;
+  box-shadow: 0 0 1.25em rgba(0, 0, 0, 0.05);
+}
+
+.eingabe-bereich h2 {
+  margin-top: 0;
+  color: #457d38;
+  font-size: 1.6em;
+}
+
+/* Reihen */
+.eingabe-zeile {
+  display: flex;
+  align-items: center;
+  gap: 0.9em;
+  margin-bottom: 0.9em;
+}
+
+label {
+  width: 7.5em;
+  font-weight: bold;
+}
+
+input, select, textarea {
+  flex: 1;
+  padding: 0.625em;
+  border-radius: 0.625em;
+  border: 0.063em solid #cfe7c7;
+  background-color: #f9fff6;
+  font-size: 1em;
+}
+
+/* Knopf */
+button {
+  margin-top: 1em;
+  background-color: #7bbf6a;
+  color: white;
+  border: none;
+  padding: 0.75em 1.5em;
+  border-radius: 0.625em;
+  font-size: 1em;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #65a857;
+}
+
+/* Pflanzenliste, rechte Seite */
+.pflanzen-liste {
+  flex: 1;
+  min-width: 22em;
+  background: #ffffff;
+  padding: 1.6em;
+  border-radius: 1em;
+  box-shadow: 0 0 1.25em rgba(0, 0, 0, 0.05);
+}
+
+.pflanzen-liste h2 {
+  color: #457d38;
+  margin-top: 0;
+  font-size: 1.6em;
+}
+
+/* Pflanzenkarte */
+.pflanzenkarte {
+  background-color: #f4fff2;
+  border: 0.125em solid #a2cfa2;
+  border-radius: 1em;
+  padding: 1em;
+  margin: 0.625em 0;
+  box-shadow: 0 0.25em 0.625em rgba(0, 0, 0, 0.08);
+}
+
+.pflanzenkopf {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.pflanzendetails {
+  font-size: 0.95em;
+  line-height: 1.4;
+}
+
+.giessen-button {
+  background-color: #e0fce4;
+  border: none;
+  border-radius: 0.5em;
+  padding: 0.4em 0.8em;
+  cursor: pointer;
+  font-size: 0.9em;
+  color: #2e6d2e;
+  margin-left: 0.5em;
+}
+
+.giessen-button:hover {
+  background-color: #b9efc4;
+}
+
+
+/* --- Responsive Design für kleinere Geräte --- */
+@media (max-width: 48em) {
   .seite {
     flex-direction: column;
-    padding: 20px;
+    padding: 1.25em;
+    gap: 2em;
   }
 
   .eingabe-bereich,
   .pflanzen-liste {
-    min-width: 100%;
-    padding: 20px;
+    width: 100%;
+    padding: 1.5em;
   }
 
   .eingabe-zeile {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
+    gap: 0.8em;
   }
 
   label {
-    width: auto;
-    margin-bottom: 5px;
+    width: 100%;
+    margin-bottom: 0.3em;
   }
 
   input, select, textarea {
@@ -153,25 +171,30 @@ body {
 
   button {
     width: 100%;
-    padding: 14px;
+    padding: 1em;
   }
 }
 
-@media (max-width: 480px) {
+/* --- Für sehr kleine Geräte (z.B. Smartphones) --- */
+@media (max-width: 30em) {
+  header {
+    padding: 2em 1em;
+  }
+
   header h3 {
-    font-size: 1.6rem;
+    font-size: 2em;
   }
 
   .eingabe-bereich h2,
   .pflanzen-liste h2 {
-    font-size: 1.4rem;
+    font-size: 1.4em;
   }
 
   .pflanzenkopf {
-    font-size: 1.1rem;
+    font-size: 1.1em;
   }
 
   .pflanzendetails {
-    font-size: 0.9rem;
+    font-size: 0.9em;
   }
 }

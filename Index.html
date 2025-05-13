@@ -13,12 +13,13 @@
   <header>
     <h3>🌿 MyPlants - Dein Pflanzenmanager</h3>
   </header>
+  
 
   <main class="seite">
     <!-- Linke Seite: Eingabe der Pflanzen -->
     <section class="eingabe-bereich">
       <h2>Neue Pflanze hinzufügen</h2>
-
+     
       <div class="emoji-auswahl">
         <label for="pflanzen-emoji">Emoji:</label>
         <select id="pflanzen-emoji" name="pflanzen-emoji">
@@ -59,12 +60,12 @@
         </div>
   
         <div class="eingabe-zeile">
-          <label for="wasser">Wässerung:</label>
+          <label for="wasser">Bewässerung:</label>
           <input type="number" id="wasser-menge" name="wasser-menge" min="1" />
           <select id="waesserungs-einheit" name="waesserungs-einheit">
-            <option>Tag</option>
-            <option>Woche</option>
-            <option>Monat</option>
+            <option>mal pro Tag</option>
+            <option>mal pro Woche</option>
+            <option>mal pro Monat</option>
           </select>
           <input type="date" id="start-datum" />
         </div>
@@ -82,20 +83,6 @@
     <section class="pflanzen-liste">
       <h2>Meine Pflanzen</h2>
       <ul id="pflanzen-anzeige">
-
-
-         <!--Beispiel Pflanze von ChatGPT-->
-        <div class="pflanzenkarte">
-          <div class="pflanzenkopf">
-            🌺 Lilly (Orchidee)
-          </div>
-          <div class="pflanzendetails">
-            💧 Wässerung: alle 7 Tage<br />
-            ☀️ Licht: Halbschatten<br />
-            📅 Ab: 01.04.2025
-          </div>
-        </div>
-        
       </ul>
     </section>
   </main>
