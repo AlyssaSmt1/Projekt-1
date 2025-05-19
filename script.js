@@ -1,5 +1,5 @@
 // Sobald das Dokument vollständig geladen ist läuft der code
-document.addEventListener("DOM", () => {
+document.addEventListener("DOMContentLoaded", () => {
   // Alle gespeicherten Pflanzen aus dem localStorage laden und anzeigen
   const pflanzen = ladePflanzen();
   zeigeAllePflanzen(pflanzen);
@@ -49,7 +49,7 @@ document.addEventListener("DOM", () => {
 
 // Daten aus dem Formular sammeln und als Objekt zurückgeben
 function sammleFormularDaten() {
-  // Formularfelder auslesen
+  // Formularfelder auslesen (mit value)
   const emoji = document.getElementById("pflanzen-emoji").value;
   const spitzname = document.getElementById("spitzname").value.trim(); //trim entfernt leerzeichen am anfang und ende von string
   const pflanzenart = document.getElementById("pflanzenart").value.trim();
@@ -120,7 +120,7 @@ function zeigePflanze(pflanze) {
   // Pfeil-Symbol für Aus-/ und Einklappen
   const pfeil = document.createElement("span");
   pfeil.textContent = "..."; // geschlossener Zustand
-  pfeil.style.transition = "transform 0.2s";
+  pfeil.style.transition = "transform 0.2s"; // weichere Animation wenn es auf gemacht wird
 
   // Titelzeile
   const kopfText = document.createElement("span");
@@ -174,6 +174,8 @@ function zeigePflanze(pflanze) {
   gegossenKnopf.style.padding = "0.5em 1em";
   gegossenKnopf.style.borderRadius = "0.3em";
   gegossenKnopf.style.cursor = "pointer";
+  gegossenKnopf.style.marginLeft = "0.5em";
+
 
   // Prüfen, ob heute schon gegossen wurde
   const heute = new Date().toISOString().split("T")[0];
@@ -198,6 +200,7 @@ function zeigePflanze(pflanze) {
   // Bereich für Knöpfe
   const aktionen = document.createElement("div");
   aktionen.style.marginTop = "0.8em";
+  aktionen.style.display = "Flex";
   aktionen.appendChild(bearbeiteKnopf);
   aktionen.appendChild(loeschKnopf);
   aktionen.appendChild(gegossenKnopf);
