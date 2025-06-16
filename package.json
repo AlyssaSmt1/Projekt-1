@@ -1,0 +1,12 @@
+{
+  "name": "vanilla-node-mongo-backend",
+  "version": "1.0.0",
+  "description": "Backend ohne Express mit MongoDB",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "mongodb": "^5.7.0"
+  }
+}
