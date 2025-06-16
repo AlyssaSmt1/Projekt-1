@@ -49,10 +49,13 @@ async function startServer() {
       req.on('data', chunk => body += chunk);
       req.on('end', async () => {
         const data = JSON.parse(body);
-        await pflanzenCollection.updateOne(
-          { _id: new ObjectId(id) },
-          { $set: data }
-        );
+        delete data._id; // ← Entferne das Feld _id aus dem Objekt
+
+await pflanzenCollection.updateOne(
+  { _id: new ObjectId(id) },
+  { $set: data }
+);
+
         res.writeHead(200);
         res.end("OK");
       });

@@ -164,15 +164,20 @@ function zeigePflanze(pflanze) {
   }
 
   gegossenKnopf.addEventListener("click", async () => {
-    pflanze.datum = heute;
-    await fetch(`/pflanzen/${pflanze.id}`, {
-      method: "PUT",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(pflanze),
-    });
-    const daten = await ladePflanzenVomServer();
-    zeigeAllePflanzen(daten);
+  const heute = new Date().toISOString().split("T")[0];
+  const update = {
+    ...pflanze,
+    datum: heute
+  };
+  await fetch(`/pflanzen/${pflanze.id}`, {
+    method: "PUT",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(update),
   });
+  const daten = await ladePflanzenVomServer();
+  zeigeAllePflanzen(daten);
+});
+
 
   const aktionen = document.createElement("div");
   aktionen.style.marginTop = "0.8em";
