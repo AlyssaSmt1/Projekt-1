@@ -32,6 +32,7 @@ async function startServer() {
     }
 
     // POST /pflanzen – Neue Pflanze speichern
+    // von ChatGPT korregieren lassen und nach dem muster die anderen gemacht
     else if (req.method === 'POST' && pathname === '/pflanzen') {
       let body = '';
       req.on('data', chunk => body += chunk);                        // Daten vom Client lesen
@@ -110,7 +111,8 @@ startServer().catch(err => {
   console.error("Fehler beim Starten des Servers:", err);
 });
 
-// Hilfsfunktion: Wandelt MongoDB _id → id (für JSON im Frontend)
+// Hilfsfunktion: Wandelt MongoDB _id zu id (für JSON im Frontend)
+//ChatGPT
 function umwandelnMongoId(pflanze) {
   return { ...pflanze, id: pflanze._id };  // kopiert alles & ergänzt id
 }
